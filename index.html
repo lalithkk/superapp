@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assest/CQ.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Vymora</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="index.html">
+        <div class="logo">
+          <img src="assest/CQ.png" alt="logo">Vymora
+        </div>
+      </a>
+      <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search services..." class="search-bar" />
+      </div>
+      <nav>
+        <ul>
+          <li><i class="fas fa-home"></i>Home</li>
+          <li><i class="fa-solid fa-bell"></i>Notification</li>
+          <li><i class="fas fa-question-circle"></i>Help Center</li>
+          <li><i class="fa-solid fa-cart-shopping"></i>Cart</li>
+          <li><i class="fas fa-user"></i>Login</li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider">
+      <button class="arrow arrow-left" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="arrow arrow-right" onclick="moveSlide(1)">&#10095;</button>
+      <div class="slides" id="slideContainer">
+        <img src="https://i.pinimg.com/736x/24/31/59/24315919b96e0f033710d188feb61dfa.jpg" alt="Slide 1">
+        <img src="https://i.pinimg.com/736x/2d/f7/17/2df71796429a8f41283f70dabd6d8eea.jpg" alt="Slide 2">
+        <img src="https://i.pinimg.com/736x/31/48/3c/31483cb282a04610cdf2ee29859ddf51.jpg" alt="Slide 3">
+        <img src="https://i.pinimg.com/736x/71/22/24/7122240a565b8c62129c2fd054b30c4a.jpg" alt="Slide 4">
+        <img src="https://i.pinimg.com/736x/d7/1a/50/d71a5032e431d2b6e66520d9df7248b0.jpg" alt="Slide 5">
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------- Main Services----------------- -->
+  <section class="services">
+    <h2>Main Services</h2>
+    <div class="service-cards">
+      <a href="shopping.html" class="card">
+        <img src="https://cdn-icons-png.flaticon.com/128/3081/3081648.png" alt="Shopping">
+        <span>Shopping</span>
+      </a>
+      <a href="tickets.html" class="card">
+        <img src="https://cdn-icons-png.flaticon.com/128/5576/5576915.png" alt="Ticket Booking">
+        <span>Ticket Booking</span>
+      </a>
+      <a href="groceries.html" class="card">
+        <img src="https://cdn-icons-png.flaticon.com/128/3514/3514242.png" alt="Groceries">
+        <span>Groceries</span>
+      </a>
+      <a href="payments.html" class="card">
+        <img src="https://cdn-icons-png.flaticon.com/128/5097/5097344.png" alt="Payments">
+        <span>Payments</span>
+      </a>
+      <a href="health.html" class="card">
+        <img src="https://cdn-icons-png.flaticon.com/128/2966/2966327.png" alt="Health">
+        <span>Health</span>
+      </a>
+      <a href="food.html" class="card">
+        <img src="https://cdn-icons-png.flaticon.com/128/9425/9425742.png" alt="Food Delivery">
+        <span>Food Delivery</span>
+      </a>
+    </div>
+  </section>
+
+ 
+<!-- ---------------------------Upcoming Bookings------------------------  -->
+<section class="upcoming-section">
+  <div class="upcoming-header">
+    <h2>Upcoming</h2>
+    <a href="#" class="view-all">View All</a>
+  </div>
+
+  <div class="upcoming-container" id="upcomingContainer">
+    <div class="upcoming-card">
+      <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1811513/1730701190123.png" alt="Prishati">
+      <div class="card-info">
+        <h3>Flight Tickets</h3>
+        <p>Book Now</p>
+        <p>vizag to</p>
+        <p>delhi</p>
+      </div>
+    </div>
+
+    <div class="upcoming-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/Sundarakanda-1947ac60-bb9a-11ef-b7ba-d38d54c71b9f.jpg?format=webp&imwidth=582" alt="Sundarakanda">
+      <div class="card-info">
+        <small>Release Date</small>
+        <p><strong>18 Apr 25</strong></p>
+        <h3>Sundarakanda</h3>
+        <p>Telugu</p>
+        <p>Drama, Romance</p>
+      </div>
+    </div>
+
+    <div class="upcoming-card">
+      <img src="assest/upcoming/fash1.png" alt="Fashion">
+      <div class="card-info">
+        <small>Shop Now</small>
+        <p><strong>5 may</strong></p>
+        <h3>offer starts</h3>
+        <p>Enjoy the best sale</p>
+        <p>On Shopping</p>
+      </div>
+    </div>
+
+    <div class="upcoming-card">
+      <img src="assest/upcoming/Groceries1.jpg" alt="Groceries">
+      <div class="card-info">
+        <small>Buy Now</small>
+        <p><strong>upto may 15</strong></p>
+        <h3>50% Discount</h3>
+        <p>Make your life healthly</p>
+        <p>On Groceries</p>
+      </div>
+    </div>
+
+    <div class="upcoming-card">
+      <img src="assest/upcoming/food.jpg" alt="The Bhootnii">
+      <div class="card-info">
+        <small>Order Now</small>
+        <p><strong>From next month</strong></p>
+        <h3>20% off</h3>
+        <p>Taste our delicious food </p>
+        <p>On Food Delivery</p>
+      </div>
+    </div>
+
+    <div class="upcoming-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/The-bhootanii-255a2730-0fc3-11f0-ac8c-93d19273dc5b.jpg?format=webp&imwidth=582" alt="The Bhootnii">
+      <div class="card-info">
+        <small>Release Date</small>
+        <p><strong>18 Apr 25</strong></p>
+        <h3>The Bhootnii</h3>
+        <p>Hindi</p>
+        <p>Comedy, Horror, Romance</p>
+      </div>
+    </div>
+
+    <div class="upcoming-card">
+      <img src="assest/upcoming/shopping.jpg" alt="shopping">
+      <div class="card-info">
+        <small>Shop Now</small>
+        <p><strong>Offer starts now</strong></p>
+        <h3>Buy-1 get-1</h3>
+        <p>Shop the Special, Love the Deals</p>
+        <p>On Shopping</p>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+<!-- --------------------------- Popular Services------------------------ -->
+  <section class="popular">
+    <h2>Popular Services</h2>
+    <div class="popular-items">
+      <a href="#" class="item">
+        <img src="https://cdn-icons-png.flaticon.com/128/10753/10753522.png" alt="Non-Veg">
+        <span>Non-Veg</span>
+      </a>
+      <a href="#" class="item">
+        <img src="https://cdn-icons-png.flaticon.com/128/6469/6469880.png" alt="Flights" >
+        <span>Flights</span>
+      </a>
+      <a href="#" class="item">
+        <img src="https://cdn-icons-png.flaticon.com/128/2968/2968946.png" alt="Medicine">
+        <span>Medicine Delivery</span>
+      </a>
+      <a href="#" class="item">
+        <img src="https://cdn-icons-png.flaticon.com/128/7026/7026587.png" alt="Bill">
+        <span>Bill Payments</span>
+      </a>
+      <a href="#" class="item">
+        <img src="https://cdn-icons-png.flaticon.com/128/8863/8863863.png" alt="Fashion">
+        <span>Fashion</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Company</h3>
+        <ul><li>Our Story</li><li>Terms & Conditions</li><li>Privacy Policy</li><li>FAQs</li></ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul><li>Help Center</li><li>Contact Us</li></ul>
+      </div>
+      <div>
+        <h3>Contact Info</h3>
+        <p>Email: support@superapp.com</p>
+        <p>Phone: +91 12345 67890</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <span>FB</span><span>IG</span><span>TW</span>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
