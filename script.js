@@ -23,14 +23,10 @@ const container = document.querySelector('.upcoming-container');
     const scrollStep = 300;
     const maxScroll = container.scrollWidth - container.clientWidth;
 
-    // Update scroll amount
     scrollAmount += scrollStep * direction;
-
-    // Reverse direction at ends
     if (scrollAmount >= maxScroll || scrollAmount <= 0) {
       direction *= -1;
     }
-
     container.scrollTo({
       left: scrollAmount,
       behavior: 'smooth'
