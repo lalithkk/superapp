@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assest/CQ.png" type="image/x-icon">
+    <title>Vymora</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- -----------------------Header------------------------- -->
+<header>
+    <div class="navbar">
+        <!-- Logo -->
+        <a href="../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../assest/CQ.png" alt="logo">
+                <span class="logo-text">Vymora</span>
+            </div>
+        </a>
+
+        <!-- Desktop Navigation (visible on larger screens) -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a></li>
+                <li>
+                    <a href="../notifation/index.html">
+                        <i class="fa-solid fa-bell"></i> 
+                        <span class="nav-text">Notification</span>
+                        <span class="notification-badge">0</span>
+                    </a>
+                </li>
+                <li><a href="../Help/help.html"><i class="fas fa-question-circle"></i> <span class="nav-text">Help Center</span></a></li>
+                <li class="cart-item"><a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="nav-text">Cart</span></a></li>
+                <li><a href="../Login/login.html"><i class="fas fa-user"></i> <span class="nav-text">Login</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation Elements -->
+        <div class="mobile-nav-elements">
+            <!-- Always visible cart icon on mobile -->
+            <a href="../cart/cart.html" class="mobile-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li>
+                <a href="../notifation/index.html">
+                    <i class="fa-solid fa-bell"></i> Notification
+                    <span class="notification-badge">0</span>
+                </a>
+            </li>
+            <li><a href="../Help/help.html"><i class="fas fa-question-circle"></i> Help Center</a></li>
+            <li><a href="../Login/login.html"><i class="fas fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- ------------------------About hero section----------------- -->
+    <section class="about-hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline>
+                <source src="../assest/about/aboutvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content animate-fade-in">
+                <h1>About Us</h1>
+                <p>Discover our story, values, and what drives us forward</p>
+            </div>
+        </div>
+    </section>
+
+<!-- ---------------------Container------------------------------------ -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-intro animate-slide-up">
+                <h2>Who We Are</h2>
+                <p>We are a passionate team dedicated to delivering exceptional products and services that make a difference in people's lives. Founded in 2025, we've grown from a small startup to an industry leader.</p>
+            </div>
+
+            <div class="about-tabs">
+                <div class="tab-buttons animate-slide-right">
+                    <button class="tab-button active" data-tab="about"> 
+                        <span>About</span>
+                    </button>
+                    <button class="tab-button" data-tab="shopping">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>Our Shopping</span>
+                    </button>
+                    <button class="tab-button" data-tab="Ticket">
+                        <i class="fa-solid fa-ticket"></i>
+                        <span>Our Tickets Booking</span>
+                    </button>
+                    <button class="tab-button" data-tab="groceries">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span>Our Groceries</span>
+                    </button>
+                    <button class="tab-button" data-tab="food">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Our Food Delivery</span>
+                    </button>
+                    <button class="tab-button" data-tab="Health">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <span>Our Health</span>
+                    </button>
+                </div>
+<!-- ----------------------------Services/about--------------------------------- -->
+                <div class="tab-content animate-slide-left">
+                    <div class="tab-pane active" id="about">
+                        <div class="tab-pane-content">
+                            <h3>Driving Innovation Forward</h3>
+                            <p>Our mission is to empower businesses and individuals through cutting-edge technology and exceptional service. We strive to create solutions that solve real-world problems while maintaining the highest standards of quality.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Deliver innovative products that exceed expectations</li>
+                                <li><i class="fas fa-check-circle"></i> Provide unparalleled customer support</li>
+                                <li><i class="fas fa-check-circle"></i> Continuously improve and adapt to changing needs</li>
+                            </ul>
+                            <h3>Shaping the Future</h3>
+                            <p>We envision a world where technology seamlessly enhances every aspect of life. Our goal is to be at the forefront of this transformation, leading with creativity, integrity, and a commitment to excellence.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Become a global leader in our industry</li>
+                                <li><i class="fas fa-check-circle"></i> Foster sustainable business practices</li>
+                                <li><i class="fas fa-check-circle"></i> Create meaningful impact in communities worldwide</li>
+                            </ul> 
+                        </div> 
+                        <div class="tab-pane-image">
+                            <img src="../assest/about/about1.jpg" alt="about">
+                        </div>  
+                        <div class="tab-pane-contents">
+                            <h3>Our Core Principles</h3>
+                            <p>Everything we do is guided by our core values. These principles shape our culture, inform our decisions, and define how we interact with clients, partners, and each other.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Integrity in all our dealings</li>
+                                <li><i class="fas fa-check-circle"></i> Passion for excellence</li>
+                                <li><i class="fas fa-check-circle"></i> Commitment to continuous learning</li>
+                                <li><i class="fas fa-check-circle"></i> Respect for diversity and inclusion</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="tab-pane" id="shopping">
+                        <div class="tab-pane-content">
+                            <h3>Shaping the Future</h3>
+                            <p>We envision a world where technology seamlessly enhances every aspect of life. Our goal is to be at the forefront of this transformation, leading with creativity, integrity, and a commitment to excellence.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Become a global leader in our industry</li>
+                                <li><i class="fas fa-check-circle"></i> Foster sustainable business practices</li>
+                                <li><i class="fas fa-check-circle"></i> Create meaningful impact in communities worldwide</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane-image">
+                            <img src="assets/vision-image.jpg" alt="shopping">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="Ticket">
+                        <div class="tab-pane-content">
+                            <h3>Our Core Principles</h3>
+                            <p>Everything we do is guided by our core values. These principles shape our culture, inform our decisions, and define how we interact with clients, partners, and each other.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Integrity in all our dealings</li>
+                                <li><i class="fas fa-check-circle"></i> Passion for excellence</li>
+                                <li><i class="fas fa-check-circle"></i> Commitment to continuous learning</li>
+                                <li><i class="fas fa-check-circle"></i> Respect for diversity and inclusion</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane-image">
+                            <img src="assets/values-image.jpg" alt="Ticket">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="groceries">
+                        <div class="tab-pane-content">
+                            <h3>Shaping the Future</h3>
+                            <p>We envision a world where technology seamlessly enhances every aspect of life. Our goal is to be at the forefront of this transformation, leading with creativity, integrity, and a commitment to excellence.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Become a global leader in our industry</li>
+                                <li><i class="fas fa-check-circle"></i> Foster sustainable business practices</li>
+                                <li><i class="fas fa-check-circle"></i> Create meaningful impact in communities worldwide</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane-image">
+                            <img src="assets/vision-image.jpg" alt="groceries">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="food">
+                        <div class="tab-pane-content">
+                            <h3>Shaping the Future</h3>
+                            <p>We envision a world where technology seamlessly enhances every aspect of life. Our goal is to be at the forefront of this transformation, leading with creativity, integrity, and a commitment to excellence.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Become a global leader in our industry</li>
+                                <li><i class="fas fa-check-circle"></i> Foster sustainable business practices</li>
+                                <li><i class="fas fa-check-circle"></i> Create meaningful impact in communities worldwide</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane-image">
+                            <img src="assets/vision-image.jpg" alt="food">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="Health">
+                        <div class="tab-pane-content">
+                            <h3>Shaping the Future</h3>
+                            <p>We envision a world where technology seamlessly enhances every aspect of life. Our goal is to be at the forefront of this transformation, leading with creativity, integrity, and a commitment to excellence.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Become a global leader in our industry</li>
+                                <li><i class="fas fa-check-circle"></i> Foster sustainable business practices</li>
+                                <li><i class="fas fa-check-circle"></i> Create meaningful impact in communities worldwide</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane-image">
+                            <img src="assets/vision-image.jpg" alt="Health">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ---------------------------Team-------------------------- -->
+    <section class="about-team">
+        <div class="container">
+            <h2 class="section-title animate-slide-up">Meet Our Leadership</h2>
+            <div class="team-grid">
+                <div class="team-member animate-slide-up">
+                    <div class="member-image">
+                        <img src="../assest/about/ceo2.jpg" alt="ceo2">
+                    </div>
+                    <div class="member-info">
+                        <h3>Prathyusha.K</h3>
+                        <p class="position">CEO</p>
+                        <p class="bio">With over 5 years of industry experience, he leads our company with vision and dedication.</p>
+                    </div>
+                </div>
+                <div class="team-member animate-slide-up delay-1">
+                    <div class="member-image">
+                        <img src="../assest/about/ceo1.jpg" alt="ceo1">
+                    </div>
+                    <div class="member-info">
+                        <h3>Lalith Kumar.K</h3>
+                        <p class="position">CTO</p>
+                        <p class="bio">Technology innovator with a passion for building scalable, user-friendly solutions.</p>
+                    </div>
+                </div>
+                <div class="team-member animate-slide-up delay-2">
+                    <div class="member-image">
+                        <img src="../assest/about/ceo3.jpg" alt="ceo3">
+                    </div>
+                    <div class="member-info">
+                        <h3>Fayaz.Sk</h3>
+                        <p class="position">CIO</p>
+                        <p class="bio">Ensures our company runs smoothly while maintaining our high standards of quality.</p>
+                    </div>
+                </div>
+
+                <div class="team-member animate-slide-up delay-1">
+                    <div class="member-image">
+                        <img src="../assest/about/ceo4.jpg" alt="ceo4">
+                    </div>
+                    <div class="member-info">
+                        <h3>Ganesh.Ch</h3>
+                        <p class="position">Director</p>
+                        <p class="bio">Provides strategic direction and leadership, driving innovation and operational excellence across the organization.</p>
+                    </div>
+                </div>
+                <div class="team-member animate-slide-up delay-1">
+                    <div class="member-image">
+                        <img src="../assest/about/ceo5.jpg" alt="ceo5">
+                    </div>
+                    <div class="member-info">
+                        <h3>Rajiya Sulthana</h3>
+                        <p class="position">Manager</p>
+                        <p class="bio">Coordinates and oversees day-to-day operations, ensuring team performance aligns with company goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="about.js"></script>
+</body>
+</html>

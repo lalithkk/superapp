@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assest/CQ.png" type="image/x-icon">
+    <title>Vymora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css"/>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <a href="../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../assest/CQ.png" alt="logo">
+                    <span class="logo-text">Vymora</span>
+                </div>
+            </a>
+    
+            <!-- Search Bar -->
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search ...." class="search-bar" />
+            </div>
+    
+            <!-- Desktop Navigation (visible on larger screens) -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a></li>
+                    <li>
+                        <a href="../notifation/index.html">
+                            <i class="fa-solid fa-bell"></i> 
+                            <span class="nav-text">Notification</span>
+                            <span class="notification-badge">0</span>
+                        </a>
+                    </li>
+                    <li><a href="../Help/help.html"><i class="fas fa-question-circle"></i> <span class="nav-text">Help Center</span></a></li>
+                    <li class="cart-item"><a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="nav-text">Cart</span></a></li>
+                    <li><a href="../Login/login.html"><i class="fas fa-user"></i> <span class="nav-text">Login</span></a></li>
+                </ul>
+            </nav>
+    
+            <!-- Mobile Navigation Elements -->
+            <div class="mobile-nav-elements">
+                <!-- Always visible cart icon on mobile -->
+                <a href="../cart/cart.html" class="mobile-cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu (hidden by default) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li>
+                    <a href="../notifation/index.html">
+                        <i class="fa-solid fa-bell"></i> Notification
+                        <span class="notification-badge">0</span>
+                    </a>
+                </li>
+                <li><a href="../Help/help.html"><i class="fas fa-question-circle"></i> Help Center</a></li>
+                <li><a href="../Login/login.html"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+<!-- ---------------------------Contact-Us----------------------------- -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-header animate-fade-in">
+                <h1>Get In Touch</h1>
+                <p>We'd love to hear from you! Reach out to us for any questions or feedback.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info animate-slide-left">
+                    <div class="info-box">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Our Office</h3>
+                            <p>123-3/4 Business Avenue, Suite 456<br>Hyderabad</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Call Us</h3>
+                            <p>+91 12345 67890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Email Us</h3>
+                            <p>support@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                            <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                            <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                            <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="contact-form animate-slide-right">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="" disabled selected></option>
+                                <option value="general">Product Damage</option>
+                                <option value="order">Order Support</option>
+                                <option value="returns">Returns & Refunds</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="contact.js"></script>
+</body>
+</html>

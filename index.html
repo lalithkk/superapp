@@ -5,74 +5,159 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="assest/CQ.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Vymora</title>
+  <link rel="stylesheet" href="../superApp/Notification/style.css"/>
   <link rel="stylesheet" href="style.css" />
+  <script src="../superApp/notifation/notificationManager.js"></script>
+  <script>
+    // Initialize notification badge on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.notificationManager) {
+        notificationManager.updateAllBadges();
+      }
+    });
+  </script>
 </head>
 <body>
   <header>
     <div class="navbar">
-      <a href="index.html">
-        <div class="logo">
-          <img src="assest/CQ.png" alt="logo">Vymora
+        <!-- Logo -->
+        <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="assest/CQ.png" alt="logo">
+                <span class="logo-text">Vymora</span>
+            </div>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search ...." class="search-bar" />
         </div>
-      </a>
-      <div class="search-container">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search services..." class="search-bar" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="#"><i class="fa-solid fa-bell"></i> Notification</a></li>
-          <li><a href="#"><i class="fas fa-question-circle"></i> Help Center</a></li>
-          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
-          <li><a href="./Login/login.html"><i class="fas fa-user"></i> Login</a></li>
-        </ul>
-        
-      </nav>
 
+        <!-- Desktop Navigation (visible on larger screens) -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a></li>
+                <li>
+                    <a href="./notifation/index.html">
+                        <i class="fa-solid fa-bell"></i> 
+                        <span class="nav-text">Notification</span>
+                        <span class="notification-badge">0</span>
+                    </a>
+                </li>
+                <li><a href="./Help/help.html"><i class="fas fa-question-circle"></i> <span class="nav-text">Help Center</span></a></li>
+                <li class="cart-item"><a href="./cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="nav-text">Cart</span></a></li>
+                <li><a href="./Login/login.html"><i class="fas fa-user"></i> <span class="nav-text">Login</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation Elements -->
+        <div class="mobile-nav-elements">
+            <!-- Always visible cart icon on mobile -->
+            <a href="./cart/cart.html" class="mobile-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </div>
-  </header>
 
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li>
+                <a href="./notifation/index.html">
+                    <i class="fa-solid fa-bell"></i> Notification
+                    <span class="notification-badge">0</span>
+                </a>
+            </li>
+            <li><a href="./Help/help.html"><i class="fas fa-question-circle"></i> Help Center</a></li>
+            <li><a href="./Login/login.html"><i class="fas fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<!-- ------------------Hero #sliders-------------------- -->
   <section class="hero">
     <div class="slider">
-      <button class="arrow arrow-left" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="arrow arrow-right" onclick="moveSlide(1)">&#10095;</button>
+      <button class="arrow arrow-left" aria-label="Previous slide">&#10094;</button>
+      <button class="arrow arrow-right" aria-label="Next slide">&#10095;</button>
+      
       <div class="slides" id="slideContainer">
-        <img src="assest/sliders/slide1.jpg" alt="Slide 1">
-        <img src="assest/sliders/slide2.jpg" alt="Slide 2">
-        <img src="assest/sliders/slide3.jpg" alt="Slide 3">
-        <img src="assest/sliders/slide4.png" alt="Slide 4">
-        <img src="assest/sliders/slide5.jpg" alt="Slide 5">
+        <div class="slide">
+          <img src="assest/sliders/slide1.jpg" alt="Slide 1" loading="lazy">
+          <div class="slide-content">
+            <h2>New Collection</h2>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assest/sliders/slide2.jpg" alt="Slide 2" loading="lazy">
+          <div class="slide-content">
+            <h2>Limited offer</h2>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assest/sliders/slide3.jpg" alt="Slide 3" loading="lazy">
+          <div class="slide-content">
+            <h2>Fresh Sale of the week</h2>
+            <a href="#" class="btn">Explore</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assest/sliders/slide4.png" alt="Slide 4" loading="lazy">
+          <div class="slide-content">
+            <h2>Best Offers on ticket Booking</h2>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assest/sliders/slide5.jpg" alt="Slide 5" loading="lazy">
+          <div class="slide-content">
+            <h2>Pay Smart,Live Easy</h2>
+            <a href="#" class="btn">Pay Now</a>
+          </div>
+        </div>
       </div>
+      <div class="pagination-dots"></div>
     </div>
   </section>
+  
 
   <!-- -------------------- Main Services----------------- -->
   <section class="services">
     <h2>Explore Services</h2>
     <div class="service-cards">
-      <a href="shopping.html" class="card">
+      <a href="shopping.html" class="card" id="card1">
         <img src="https://cdn-icons-png.flaticon.com/128/3081/3081648.png" alt="Shopping">
         <span>Shopping</span>
       </a>
-      <a href="tickets.html" class="card">
+      <a href="tickets.html" class="card" id="card2">
         <img src="https://cdn-icons-png.flaticon.com/128/5576/5576915.png" alt="Ticket Booking">
         <span>Ticket Booking</span>
       </a>
-      <a href="groceries.html" class="card">
+      <a href="groceries.html" class="card" id="card3">
         <img src="https://cdn-icons-png.flaticon.com/128/3514/3514242.png" alt="Groceries">
         <span>Groceries</span>
       </a>
-      <a href="payments.html" class="card">
+      <a href="payments.html" class="card" id="card4">
         <img src="https://cdn-icons-png.flaticon.com/128/5097/5097344.png" alt="Payments">
         <span>Payments</span>
       </a>
-      <a href="health.html" class="card">
+      <a href="health.html" class="card" id="card5">
         <img src="https://cdn-icons-png.flaticon.com/128/2966/2966327.png" alt="Health">
         <span>Health</span>
       </a>
-      <a href="food.html" class="card">
+      <a href="food.html" class="card" id="card6">
         <img src="https://cdn-icons-png.flaticon.com/128/9425/9425742.png" alt="Food Delivery">
         <span>Food Delivery</span>
       </a>
@@ -154,6 +239,17 @@
     </div>
 
     <div class="upcoming-card">
+      <img src="assest/upcoming/groceries2.jpg" alt="groceries2">
+      <div class="card-info">
+        <small>Order Now</small>
+        <p><strong>Starts From next week</strong></p>
+        <h3>75% off</h3>
+        <p>Great Groceries, Greater Savings</p>
+        <p>On Groceries</p>
+      </div>
+    </div>
+
+    <div class="upcoming-card">
       <img src="assest/upcoming/shopping.jpg" alt="shopping">
       <div class="card-info">
         <small>Shop Now</small>
@@ -181,23 +277,23 @@
   <section class="popular">
     <h2>Popular Services</h2>
     <div class="popular-items">
-      <a href="#" class="item">
+      <a href="#" class="item" id="item3">
         <img src="https://cdn-icons-png.flaticon.com/128/10753/10753522.png" alt="Non-Veg">
         <span>Non-Veg</span>
       </a>
-      <a href="#" class="item">
+      <a href="#" class="item" id="item2">
         <img src="https://cdn-icons-png.flaticon.com/128/6469/6469880.png" alt="Flights" >
         <span>Flights</span>
       </a>
-      <a href="#" class="item">
+      <a href="#" class="item" id="item5">
         <img src="https://cdn-icons-png.flaticon.com/128/2968/2968946.png" alt="Medicine">
         <span>Medicine Delivery</span>
       </a>
-      <a href="#" class="item">
+      <a href="#" class="item" id="item4">
         <img src="https://cdn-icons-png.flaticon.com/128/7026/7026587.png" alt="Bill">
         <span>Bill Payments</span>
       </a>
-      <a href="#" class="item">
+      <a href="#" class="item" id="item1">
         <img src="https://cdn-icons-png.flaticon.com/128/8863/8863863.png" alt="Fashion">
         <span>Fashion</span>
       </a>
@@ -235,7 +331,7 @@
       
       <div class="contact-info">
         <strong>Contact Info:</strong><br>
-        Email: Vymora@example.com<br>
+        Email: Vymora@gmail.com<br>
         Phone: +91-646434684
       </div>
     </div>
@@ -244,16 +340,15 @@
       <div class="footer-column">
         <h4>Information</h4>
         <a href="#">Home</a>
-        <a href="#">Contact Us</a>
-        <a href="#">About Us</a>
-        <a href="#">Help Center</a>
+        <a href="./contactUs/contact.html">Contact Us</a>
+        <a href="./About/about.html">About Us</a>
       </div>
       <div class="footer-column">
         <h4>Company</h4>
         <a href="#">Our Story</a>
         <a href="#">Terms & Conditions</a>
         <a href="#">Privacy Policy</a>
-        <a href="#">FAQs</a>
+        <a href="./Help/help.html">FAQs</a>
       </div>
       <div class="footer-column">
         <h4>Services</h4>

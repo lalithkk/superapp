@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="../assest/CQ.png" type="image/x-icon">
+  <title>Vymora</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../script.js"></script>
+  <script src="notificationManager.js"></script>
+  <script>
+    // Initialize notification badge on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.notificationManager) {
+        notificationManager.updateAllBadges();
+      }
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <!-- Logo -->
+        <a href="../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../assest/CQ.png" alt="logo">
+                <span class="logo-text">Vymora</span>
+            </div>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search..." class="search-bar" />
+        </div>
+
+        <!-- Desktop Navigation (visible on larger screens) -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i> 
+                        <span class="nav-text">Notification</span>
+                        <span class="notification-badge">0</span>
+                    </a>
+                </li>
+                <li><a href="../Help/help.html"><i class="fas fa-question-circle"></i> <span class="nav-text">Help Center</span></a></li>
+                <li class="cart-item"><a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="nav-text">Cart</span></a></li>
+                <li><a href="../Login/login.html"><i class="fas fa-user"></i> <span class="nav-text">Login</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation Elements -->
+        <div class="mobile-nav-elements">
+            <!-- Always visible cart icon on mobile -->
+            <a href="../cart/cart.html" class="mobile-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li>
+                <a href="../notifation/index.html">
+                    <i class="fa-solid fa-bell"></i> Notification
+                    <span class="notification-badge">0</span>
+                </a>
+            </li>
+            <li><a href="../Help/help.html"><i class="fas fa-question-circle"></i> Help Center</a></li>
+            <li><a href="../Login/login.html"><i class="fas fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+</header>
+
+      <div class="notification-container">
+        <div class="notification-header">
+            <h2>Notifications 🔔</h2>
+            <div class="notification-count">0</div>
+        </div>
+        
+        <ul class="notification-list" id="notificationList">
+            <!-- Notifications will be inserted here by JavaScript -->
+        </ul>
+        
+        <div class="empty-notifications">
+            <p>You don't have any notifications yet.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

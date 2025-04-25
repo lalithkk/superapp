@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (playPromise !== undefined) {
             playPromise.catch(error => {
-                // Auto-play was prevented, show fallback image
+                
                 const fallbackImg = document.createElement('img');
-                fallbackImg.src = 'C:/Users/91809/Desktop/project/superApp/assest/upcoming/fash1.png';
+                fallbackImg.src = 'https://i.pinimg.com/736x/96/56/f2/9656f2b04f5ae350d56331e1df2af84d.jpg';
                 fallbackImg.alt = 'Video fallback';
                 fallbackImg.style.width = '100%';
                 fallbackImg.style.height = '100%';
