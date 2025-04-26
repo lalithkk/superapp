@@ -45,19 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         observer.observe(element);
     });
-    
-    // Video play/pause control for mobile devices
+
+    // Try to play video (this will work if autoplay is allowed)
     const heroVideo = document.querySelector('.hero-video-container video');
-    
-    function handleVideo() {
-        if (window.innerWidth <= 768) {
-            heroVideo.pause();
-        } else {
-            heroVideo.play().catch(e => console.log('Video autoplay prevented:', e));
-        }
-    }
-    
-    // Run on load and resize
-    handleVideo();
-    window.addEventListener('resize', handleVideo);
+    heroVideo.play().catch(e => {
+        console.log('Autoplay prevented, showing fallback message:', e);
+        
+    });
 });
