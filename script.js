@@ -1,19 +1,4 @@
  // slider 
-// let currentIndex = 0;
-// const slideContainer = document.getElementById("slideContainer");
-// const totalSlides = slideContainer.children.length;
-
-// function moveSlide(direction) {
-//   currentIndex += direction;
-//   if (currentIndex < 0) currentIndex = totalSlides - 1;
-//   if (currentIndex >= totalSlides) currentIndex = 0;
-//   slideContainer.style.marginLeft = `-${currentIndex * 100}%`;
-// }
-
-// setInterval(() => {
-//   moveSlide(1);
-// }, 5000);
-// ////////////////////////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', function() {
   const slider = document.querySelector('.slides');
   const slides = document.querySelectorAll('.slide');
