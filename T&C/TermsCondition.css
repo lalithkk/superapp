@@ -1,0 +1,108 @@
+/* ===== Terms Page CSS ===== */
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .terms-section {
+    padding: 60px 20px;
+    animation: fadeInPage 1.2s ease;
+  }
+  
+  .terms-container {
+    max-width: 1200px;
+    margin: auto;
+    background: #F0F8FF;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+  
+  .section-title {
+    font-size: 2.3rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .last-updated {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 30px;
+  }
+  
+  .terms-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .terms-content h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .terms-content p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInItem 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .fade-in:nth-child(even) {
+    animation-delay: 0.5s;
+  }
+  
+  .fade-in:nth-child(odd) {
+    animation-delay: 0.7s;
+  }
+  
+  @keyframes fadeInItem {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInPage {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .terms-container {
+      padding: 20px;
+    }
+    .section-title {
+      font-size: 2.2rem;
+    }
+    .terms-content h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+    .terms-content p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assest/CQ.png" type="image/x-icon">
+    <title>Vymora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="Story.css">
+</head>
+<body>
+<!-- -------------------------------------Header/navbar------------------------------------- -->
+<header>
+    <div class="navbar">
+        <!-- Logo -->
+        <a href="../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../assest/CQ.png" alt="logo">
+                <span class="logo-text">Vymora</span>
+            </div>
+        </a>
+
+        <!-- Desktop Navigation (visible on larger screens) -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a></li>
+                <li>
+                    <a href="../notifation/index.html">
+                        <i class="fa-solid fa-bell"></i> 
+                        <span class="nav-text">Notification</span>
+                        <span class="notification-badge">0</span>
+                    </a>
+                </li>
+                <li><a href="../Help/help.html"><i class="fas fa-question-circle"></i> <span class="nav-text">Help Center</span></a></li>
+                <li class="cart-item"><a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="nav-text">Cart</span></a></li>
+                <li><a href="../Login/login.html"><i class="fas fa-user"></i> <span class="nav-text">Login</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation Elements -->
+        <div class="mobile-nav-elements">
+            <!-- Always visible cart icon on mobile -->
+            <a href="../cart/cart.html" class="mobile-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li>
+                <a href="../notifation/index.html">
+                    <i class="fa-solid fa-bell"></i> Notification
+                    
+                </a>
+            </li>
+            <li><a href="../Help/help.html"><i class="fas fa-question-circle"></i> Help Center</a></li>
+            <li><a href="../Login/login.html"><i class="fas fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- ----------------------------------ourstory------------------------------------ -->
+    <section class="our-story-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Our Journey</span></h2>
+                <p>In the heart of a bustling city where dreams were as vivid as the neon lights, Vymora was born.
+                <br/>It wasn’t just an idea; it was a realization that life today needed an easier way to connect people with what they love — shopping, food, healthcare, travel, entertainment, and financial services — all without the chaos of switching between endless apps.
+                <br/>We dreamt of creating not just another app, but a Super App that understands everyday human needs, simplifies experiences, and creates meaningful interactions.
+                A single place where everything important — groceries, movie tickets, doctor appointments, flight bookings, fashion, and payments — is just a touch away.
+                </p>
+            </div>
+
+            <div class="story-container">
+                <div class="story-card">
+                    <i class="fas fa-lightbulb card-icon"></i>
+                    <h3 class="card-title">The Early Days: Where It All Began</h3>
+                    <p class="card-content">Every great story has humble beginnings. Ours started in a modest room with a small team of five passionate dreamers. Armed with whiteboards, caffeine, and a relentless pursuit of excellence, the first blueprint of Vymora was scribbled in a frenzy of hope.
+                        <br/>We spent nights designing, rethinking, and reimagining what a true Super App should be.
+                        We didn’t want to be just another marketplace — we wanted to build trust, ease, and delight into every service we offered.
+                    </p>
+                    <span class="year-badge">Every click, every scroll, every tap  we obsessed over the experience.</span>
+                </div>
+
+                <div class="story-card">
+                    <i class="fas fa-rocket card-icon"></i>
+                    <h3 class="card-title">Launching Vymora: A Dream Takes Flight</h3>
+                    <p class="card-content">When we launched our first beta version, we had just a handful of services: shopping essentials, food delivery, and movie ticket bookings.Even in those early days, the response from users was electric.We saw our dreams reflect in the smiles of our first customers.Encouraged by their love, we pushed harder.
+                    <br/>We partnered with top restaurants, premium grocery brands, trusted healthcare providers, and leading logistic networks.We built our own payment wallet.
+                    </p>
+                    <span class="year-badge">In less than a year, Vymora transformed from an idea to a thriving Super App ecosystem.</span>
+                </div>
+
+                <div class="story-card">
+                    <i class="fas fa-award card-icon"></i>
+                    <h3 class="card-title">Market Leadership</h3>
+                    <p class="card-content">Today, we're proud to be one of the most trusted platforms, recognized for our technological innovation, sustainable practices, and exceptional customer experiences.
+                    <br/>Our aim is not just transactions; it's building relationships.
+                    <br/>When you order dinner for your family, when you book your next adventure, when you pay a bill at midnight, or when you consult a doctor from the comfort of your home — Vymora stands silently by your side, empowering each moment.
+                    </p>
+                    <span class="year-badge">Vymora Technologies Pvt. Ltd. (“Vymora”, “we”, “our”, “us”).</span>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">15M+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">75K+</div>
+                    <div class="stat-label">Products</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">800+</div>
+                    <div class="stat-label">Brand Partners</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.8%</div>
+                    <div class="stat-label">Order Accuracy</div>
+                </div>
+            </div>
+<!-- -------------------------------Milestones--------------------------------------- -->
+            <div class="milestones-section">
+                <div class="section-header">
+                    <h2><span>Key Milestones</span></h2>
+                    <p>In our journey so far, we have achieved milestones that fill us with pride:</p>
+                </div>
+
+                <div class="milestones-timeline">
+                    <div class="milestone-item">
+                        <div class="milestone-year">First year</div>
+                        <h4 class="milestone-title">First Million Customers</h4>
+                        <p class="milestone-description">Reached our first million customers within just two years of operation, validating our business model and customer-focused approach.</p>
+                    </div>
+
+                    <div class="milestone-item">
+                        <div class="milestone-year">100,000+</div>
+                        <h4 class="milestone-title">Restaurants delivering food with love</h4>
+                        <p class="milestone-description">Partnering with over 100,000 restaurants, we have created a network that brings a diverse array of cuisines and flavors to the doorsteps of our customers.</p>
+                    </div>
+
+                    <div class="milestone-item">
+                        <div class="milestone-year">50,000+</div>
+                        <h4 class="milestone-title">Grocery Essentials delivered to homes</h4>
+                        <p class="milestone-description">Recognizing the need for accessible daily essentials, we expanded our services to include grocery delivery.</p>
+                    </div>
+
+                    <div class="milestone-item">
+                        <div class="milestone-year">25,000+</div>
+                        <h4 class="milestone-title"> Flight and Bus Bookings completed successfully</h4>
+                        <p class="milestone-description">We ventured into travel services to simplify journeys for our users. Completing over 25,000 flight and bus bookings with precision and ease, we made travel planning hassle-free. </p>
+                    </div>
+                </div>
+            </div>
+<!-- -----------------------------Commitments----------------------------------- -->
+            <div class="commitment-section">
+                <div class="section-header">
+                    <h2><span>Our Core Commitments</span></h2>
+                    <p>The principles that guide every decision we make and every action we take</p>
+                </div>
+
+                <div class="commitment-grid">
+                    <div class="commitment-card">
+                        <div class="commitment-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="commitment-title">Customer First</h4>
+                        <p class="commitment-description">We put our customers at the heart of everything we do, ensuring their needs are always our top priority.</p>
+                    </div>
+
+                    <div class="commitment-card">
+                        <div class="commitment-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="commitment-title">Sustainable Growth</h4>
+                        <p class="commitment-description">We're committed to environmentally responsible practices that benefit both our business and the planet.</p>
+                    </div>
+
+                    <div class="commitment-card">
+                        <div class="commitment-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="commitment-title">Continuous Innovation</h4>
+                        <p class="commitment-description">We constantly push boundaries to deliver cutting-edge solutions that enhance the shopping experience.</p>
+                    </div>
+                </div>
+            </div>
+<!-- --------------------------------------Customers----------------------------------------------------- -->
+            <div class="testimonials-section">
+                <div class="section-header">
+                    <h2><span>What Our Customers Say</span></h2>
+                    <p>Hear from people who have experienced our service firsthand.</p>
+                </div>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">I've been shopping with this platform for years, and their customer service is unmatched. When I had an issue with my order, they resolved it within hours.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://i.pinimg.com/736x/a0/94/45/a09445e155a973fc9054d0f4b55edd8b.jpg" alt="Customer 1">
+                            </div>
+                            <div class="author-info">
+                                <h4>chandrika</h4>
+                                <p>Loyal Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The delivery speed is incredible! I ordered a smartphone at noon and received it the same evening. This has become my go-to shopping destination.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://i.pinimg.com/736x/6c/6a/4e/6c6a4e79a77674b5865bea3b3b141e0f.jpg" alt="Customer 2">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sai</h4>
+                                <p>Frequent Shopper</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">As a small business owner, their seller platform has helped me reach customers across the country. The analytics tools are incredibly helpful.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://i.pinimg.com/736x/32/54/e4/3254e4b1a9c34f7f6e87f0540a7b0816.jpg" alt="Customer 3">
+                            </div>
+                            <div class="author-info">
+                                <h4>Lalitha</h4>
+                                <p>Small Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- --------------------------Promise---------------------------------------------------- -->
+            <div class="Promise">
+                <h2><span>A Promise to You</span></h2>
+                <p>At Vymora, every update, every feature, every new service is built with you in mind.
+                    Your trust fuels us. Your feedback shapes us. Your happiness is our true success.
+                <br/>We promise to keep innovating.
+                <br/>We promise to keep listening.
+                <br/>We promise to keep serving — with heart, with purpose, with excellence.
+                <br/>Thank you for being part of our journey.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="Story.js"></script>
+</body>
+</html>
