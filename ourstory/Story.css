@@ -24,12 +24,12 @@ body {
     overflow: hidden;
 }
 
-.section-header, .Promise {
+.section-header ,.Promise {
     text-align: center;
     margin-bottom: 60px;
 }
 
-.section-header h2, .Promise h2{
+.section-header h2,.Promise h2 {
     font-size: 2.5rem;
     color: #2a2a72;
     margin-bottom: 15px;
@@ -38,11 +38,11 @@ body {
     display: inline-block;
 }
 
-.section-header h2 span ,.Promise h2 span{
+.section-header h2 span,.Promise he span {
     position: relative;
 }
 
-.section-header h2 span::after ,.Promise h2 span::after {
+.section-header h2 span::after,.Promise h2 span::after {
     content: '';
     position: absolute;
     width: 70%;
@@ -61,13 +61,12 @@ body {
     to { transform: scaleX(1); }
 }
 
-.section-header p ,.Promise p{
+.section-header p, .Promise p {
     font-size: 1rem;
     color: #666;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
     line-height: 1.8;
-    text-align: left;
 }
 
 /* Timeline Story Cards */
@@ -92,8 +91,8 @@ body {
     min-height: 380px;
     display: flex;
     flex-direction: column;
-    opacity: 0;
-    transform: translateY(40px);
+    opacity: 1;
+    transform: translateY(0);
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -107,18 +106,8 @@ body {
     background: linear-gradient(90deg, #2a2a72, #009ffd);
 }
 
-.story-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.story-card:nth-child(1).visible { transition-delay: 0.1s; }
-.story-card:nth-child(2).visible { transition-delay: 0.3s; }
-.story-card:nth-child(3).visible { transition-delay: 0.5s; }
-
 .story-card:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
@@ -187,12 +176,6 @@ body {
     gap: 30px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     margin-bottom: 80px;
-    transform: scale(0.95);
-    opacity: 0;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.stats-section.visible {
     transform: scale(1);
     opacity: 1;
 }
@@ -264,12 +247,6 @@ body {
     background: white;
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    opacity: 0;
-    transform: translateX(-30px);
-    transition: all 0.6s ease;
-}
-
-.milestone-item.visible {
     opacity: 1;
     transform: translateX(0);
 }
@@ -329,22 +306,12 @@ body {
     padding: 30px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-.commitment-card.visible {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.commitment-card:nth-child(1).visible { transition-delay: 0.1s; }
-.commitment-card:nth-child(2).visible { transition-delay: 0.3s; }
-.commitment-card:nth-child(3).visible { transition-delay: 0.5s; }
-
 .commitment-card:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -388,12 +355,6 @@ body {
     padding: 30px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     scroll-snap-align: start;
-    opacity: 0;
-    transform: translateX(30px);
-    transition: all 0.6s ease;
-}
-
-.testimonial-card.visible {
     opacity: 1;
     transform: translateX(0);
 }
@@ -446,7 +407,6 @@ body {
     font-size: 0.9rem;
     color: #777;
 }
-
 
 /* Responsive Styles */
 @media (max-width: 992px) {
